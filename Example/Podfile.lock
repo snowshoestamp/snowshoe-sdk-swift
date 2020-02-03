@@ -1,0 +1,27 @@
+PODS:
+  - OAuthSwift (1.3.0)
+  - ObjectMapper (3.4.2)
+  - SnowShoe-Swift (2.0.1):
+    - OAuthSwift (= 1.3.0)
+    - ObjectMapper (= 3.4.2)
+
+DEPENDENCIES:
+  - SnowShoe-Swift (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OAuthSwift
+    - ObjectMapper
+
+EXTERNAL SOURCES:
+  SnowShoe-Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OAuthSwift: 7ef2f74cb570e1e30e2aeddc58fccc0f3891d057
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  SnowShoe-Swift: f6d51bcdefe8fed273e8526660b4b8393ad3e868
+
+PODFILE CHECKSUM: a5e4b1b40d7da1d73abea02cf25384f3d59c5c5b
+
+COCOAPODS: 1.5.3
