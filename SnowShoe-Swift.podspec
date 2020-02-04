@@ -8,16 +8,16 @@
 
 Pod::Spec.new do |s|
   s.name             = "SnowShoe-Swift"
-  s.version          = "2.0.1"
-  s.summary          = "iOS wrapper for SnowShoe in Swift"
+  s.version          = "3.0.0"
+  s.summary          = "Swift SDK Client for the Snowshoe API"
   s.description      = <<-DESC
   SnowShoe is an authentication tool for smartphones. This library provides a simple Swift wrapper.
                        DESC
 
-  s.homepage         = "https://github.com/snowshoestamp/snowshoe-swift"
+  s.homepage         = "https://github.com/snowshoestamp/snowshoe-sdk-swift"
   s.license          = 'MIT'
-  s.author           = { "SnowShoe" => "support@snowshoestamp.com" }
-  s.source           = { :git => "https://github.com/snowshoestamp/snowshoe-swift.git", :tag => s.version.to_s }
+  s.author           = { "SnowShoe" => "engineering@snowshoestamp.com" }
+  s.source           = { :git => "https://github.com/snowshoestamp/snowshoe-sdk-swift.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '9.0'
   s.swift_version = '5'
@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
   #  'SnowShoe-Swift' => ['Pod/Assets/*.png']
   #}
 
-  s.dependency 'OAuthSwift', '1.3.0'
-  s.dependency 'ObjectMapper', '3.4.2'
+  s.dependency 'OAuthSwift', '2.0.0'
+  s.dependency 'ObjectMapper', '3.5'
 end
