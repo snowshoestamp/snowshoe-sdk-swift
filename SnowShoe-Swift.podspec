@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/snowshoestamp/snowshoe-sdk-swift"
   s.license          = 'MIT'
   s.author           = { "SnowShoe" => "engineering@snowshoestamp.com" }
-  s.source           = { :git => "https://github.com/snowshoestamp/snowshoe-sdk-swift.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/snowshoestamp/snowshoe-sdk-swift.git" }
 
   s.platform     = :ios, '9.0'
   s.swift_version = '5'
