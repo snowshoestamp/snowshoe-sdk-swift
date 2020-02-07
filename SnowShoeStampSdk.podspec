@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SnowShoeStampSdk"
-  s.version          = "3.0.0"
+  s.version          = "3.0.1"
   s.summary          = "Swift SDK Client for the Snowshoe API"
   s.description      = <<-DESC
   SnowShoe is an authentication tool for smartphones. This library provides a simple Swift wrapper.
