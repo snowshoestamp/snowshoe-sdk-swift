@@ -28,6 +28,5 @@ Pod::Spec.new do |s|
   #  'SnowShoe-Swift' => ['Pod/Assets/*.png']
   #}
 
-  s.dependency 'OAuthSwift', '2.0.0'
   s.dependency 'ObjectMapper', '3.5'
 end
