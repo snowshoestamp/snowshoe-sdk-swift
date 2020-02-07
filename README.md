@@ -53,3 +53,9 @@ Then assign the delegate to the `SnowShoeView`:
 ```swift
 snowShoeView.delegate = delegate
 ```
+
+# More info
+
+- This view can be used as the main view for a window or an overlay for stamping on.
+- For more info on how to use our product visit: 
+    https://snowshoe.readme.io/v3.0/docs
