@@ -1,12 +1,6 @@
-# SnowShoe-Swift
+# SnowShoe Stamp SDK
 
-[![CI Status](http://img.shields.io/travis/mluedke2/snowshoe-swift.svg?style=flat)](https://travis-ci.org/mluedke2/snowshoe-swift)
-[![Version](https://img.shields.io/cocoapods/v/SnowShoe-Swift.svg?style=flat)](http://cocoapods.org/pods/SnowShoe-Swift)
-[![License](https://img.shields.io/cocoapods/l/SnowShoe-Swift.svg?style=flat)](http://cocoapods.org/pods/SnowShoe-Swift)
-[![Platform](https://img.shields.io/cocoapods/p/SnowShoe-Swift.svg?style=flat)](http://cocoapods.org/pods/SnowShoe-Swift)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-
-The [SnowShoe Stamp](http://www.snowshoestamp.com) is an authentication tool for smartphones.
+The [SnowShoe Stamp](http://www.snowshoestamp.com) is an authentication tool for smartphones and tablets.
 
 <p align="center" >
   <img src="https://beta.snowshoestamp.com/static/api/img/stamp.gif" alt="SnowShoe" title="SnowShoe" width="160" height="284">
@@ -14,44 +8,18 @@ The [SnowShoe Stamp](http://www.snowshoestamp.com) is an authentication tool for
 
 ## Installation
 
-SnowShoe-Swift is available through [CocoaPods](http://cocoapods.org). To install
+SnowShoe Stamp SDK is available through [CocoaPods](http://cocoapods.org). To install
 it, add the following line to your Podfile:
 
 ```ruby
-pod "SnowShoe-Swift"
-```
-
-For Swift 3:
-
-```ruby
-pod "SnowShoe-Swift", :git => 'https://github.com/snowshoestamp/snowshoe-swift-3'
-```
-
-For Swift 4.1:
-
-```ruby
-pod "SnowShoe-Swift", :git => 'https://github.com/snowshoestamp/snowshoe-swift', :branch => 'swift_4'
-```
-
-For Swift 5:
-
-```ruby
-pod "SnowShoe-Swift", :git => 'https://github.com/snowshoestamp/snowshoe-swift', :branch => 'swift_5'
-```
-
-SnowShoe-Swift is also available with [Carthage](https://github.com/Carthage/Carthage). To install it, add the following line to your Cartfile:
-
-```ruby
-github "snowshoestamp/snowshoe-swift"
-```
-
-For Swift 3:
-
-```ruby
-github "snowshoestamp/snowshoe-swift-3"
+pod "SnowShoeStampSdk"
 ```
 
 ## Usage
+
+1. To get the app running, you will need to create an app on our site. Go to https://app.snowshoestamp.com/ and Sign In if you have an account or sign up if you don't have one. Once you are logged in, click “New App” to create a new one.
+
+2. After you have created the new application look at it's settings and you will find 'API Key 1' and 'API Key 2'. These can both be used as the api key you will need later when setting up the app.
 
 ### Example
 
@@ -65,11 +33,10 @@ To use it, add this import:
 
 `import SnowShoe_Swift`
 
-Then, assign your key and secret from the [SnowShoe Dashboard](https://beta.snowshoestamp.com/applications/application/list/) to the view:
+Then, assign your api key from the app that you would like to set as the one receiving calls from this app:
 
 ```swift
-snowShoeView.appKey = "YOUR_APP_KEY"
-snowShoeView.appSecret = "YOUR_APP_SECRET"
+snowShoeView.apiKey = "YOUR_API_KEY"
 ```
 
 Then, implement `SnowShoeDelegate`, which will be notified when a stamp request is made to the API and when a result comes back:
@@ -86,13 +53,3 @@ Then assign the delegate to the `SnowShoeView`:
 ```swift
 snowShoeView.delegate = delegate
 ```
-
-## Author
-
-SnowShoe (support@snowshoestamp.com) & Matt Luedke (mluedke2@gmail.com)
-
-Hardware and API managed by [SnowShoe](http://snowshoestamp.com/)
-
-## License
-
-SnowShoe-Swift is available under the MIT license. See the LICENSE file for more info.
