@@ -51,12 +51,12 @@ open class SnowShoeView: UIView {
             let base64Encoded = data!.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
             
             //POST method
-            let parameters = "data=\(String(describing: base64Encoded))"
+            let parameters = "{\"data\":\"\(String(describing: base64Encoded))\"}"
             let postData = parameters.data(using: .utf8)
             
             var request = URLRequest(url: URL(string: baseUrl)!, timeoutInterval: Double.infinity)
             request.addValue(apiKey, forHTTPHeaderField: "SnowShoe-Api-Key")
-            request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             
             request.httpMethod = "POST"
             request.httpBody = postData
