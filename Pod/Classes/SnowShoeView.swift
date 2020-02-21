@@ -13,7 +13,7 @@ open class SnowShoeView: UIView {
     open var apiKey: String?
     open var delegate: SnowShoeDelegate?
     
-    let baseUrl = "https://ss-dev-api-stamp.azurewebsites.net/v3/stamp"
+    let baseUrl = "https://api.snowshoestamp.com/v3/stamp"
     let touchCount = 5
     
     override init (frame: CGRect) {
@@ -47,19 +47,21 @@ open class SnowShoeView: UIView {
                 stampPoints.append([Double(point.x), Double(point.y)])
             }
             
-            let data = try? JSONSerialization.data(withJSONObject: stampPoints, options: [])
-            let base64Encoded = data!.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
-            
             //POST method
-            let parameters = "{\"data\":\"\(String(describing: base64Encoded))\"}"
-            let postData = parameters.data(using: .utf8)
-            
             var request = URLRequest(url: URL(string: baseUrl)!, timeoutInterval: Double.infinity)
             request.addValue(apiKey, forHTTPHeaderField: "SnowShoe-Api-Key")
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             
             request.httpMethod = "POST"
-            request.httpBody = postData
+            
+            do {
+                let bodyData = SnowShoeRequest(stampPoints)
+                let bodyJson = try JSONEncoder().encode(bodyData)
+                request.httpBody = bodyJson
+            }
+            catch {
+                print("ERROR: failed to create JSON for stamp request.")
+            }
             
             let task = URLSession.shared.dataTask(with: request, completionHandler: {
                 data, response, error in

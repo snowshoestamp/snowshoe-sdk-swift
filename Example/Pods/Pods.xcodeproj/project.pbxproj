@@ -43,6 +43,8 @@
 		8525947B86F09775272B3E1BE8233322 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46E89172DBA3A4BF38990FEA2A34350 /* Utils.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		86ED9C4FA695DECBCF4EA08A822EBD7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D474F8BD3BCC35C5C78025066D503B0 /* Foundation.framework */; };
 		87100968581BBA4AECB69A315793CDAE /* SnowShoeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA366BDEF779523074AB4BEE3D2DFE41 /* SnowShoeStamp.swift */; };
+		88AF20AC23FCC12F0043E8BE /* SnowShoeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AF20AB23FCC12F0043E8BE /* SnowShoeRequest.swift */; };
+		88AF20AD23FCC12F0043E8BE /* SnowShoeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AF20AB23FCC12F0043E8BE /* SnowShoeRequest.swift */; };
 		9B75FF4434D9BC8F417D5FC7E8AE3C1F /* Objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3486D03D3F972E8EFB72DF009E25AD8A /* Objc.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A4654C573C679E320FFF2D4C5F3772FA /* OAuthSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8299501A68FFD7D4356087C5E321CA8 /* OAuthSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7A7E4859656F8F1D9F6FC3EE813673F /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8192522B260E63F382739010DACB03 /* Operators.swift */; };
@@ -164,6 +166,7 @@
 		7A0F7DD5A3C77CB541B1295AF5BCA1CA /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/SHA1.swift; sourceTree = "<group>"; };
 		7A70E6AF3BA99462D99970FC0092942E /* Pods-SnowShoe-Swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SnowShoe-Swift_Example-umbrella.h"; sourceTree = "<group>"; };
 		85AD6016A172F73A517BA47F70F5E911 /* OAuthSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuthSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88AF20AB23FCC12F0043E8BE /* SnowShoeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SnowShoeRequest.swift; path = Pod/Classes/SnowShoeRequest.swift; sourceTree = "<group>"; };
 		91484B63835AD2856054E5639C5AAE45 /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
 		925E14D942BAC5B838310B458AA1DD71 /* Pods-SnowShoe-Swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnowShoe-Swift_Example-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -361,6 +364,7 @@
 				491F6DFCC7645730990B577B3F8CB492 /* SnowShoeDelegate.swift */,
 				EED81F0C2BA8FA4CD21428C111AAE2AD /* SnowShoeError.swift */,
 				4D98FC0655B7C8628F06DBDB17E52AFE /* SnowShoeResult.swift */,
+				88AF20AB23FCC12F0043E8BE /* SnowShoeRequest.swift */,
 				DA366BDEF779523074AB4BEE3D2DFE41 /* SnowShoeStamp.swift */,
 				3CDE58140207F3683432093F07759CF3 /* SnowShoeView.swift */,
 				DF042E2E284CDA575971667BAA62E7AD /* SSTapGestureRecognizer.swift */,
@@ -596,6 +600,9 @@
 					08BC6B6F95716AEE0A0D4790D6718DB5 = {
 						LastSwiftMigration = 1020;
 					};
+					737F9CC00706CCFD25884704FEC7D12B = {
+						LastSwiftMigration = 1130;
+					};
 					82B78CF74274395B823AFF537834AB2A = {
 						LastSwiftMigration = 1020;
 					};
@@ -696,6 +703,7 @@
 			files = (
 				C269382646537BF07751933418836FE8 /* SnowShoe-Swift-dummy.m in Sources */,
 				FA4E447B6726E2EAA4662E180F4C2F9F /* SnowShoeDateTransform.swift in Sources */,
+				88AF20AD23FCC12F0043E8BE /* SnowShoeRequest.swift in Sources */,
 				F1EE5A16845177A4E9F19B775AAB7B04 /* SnowShoeDelegate.swift in Sources */,
 				D4810405F6C13E2FEC4C8969B4B97DF1 /* SnowShoeError.swift in Sources */,
 				0892B9F20A8F3CF10156E9FB2CA8F392 /* SnowShoeResult.swift in Sources */,
@@ -710,6 +718,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA4DA46953E508E58977A530F15E2EAB /* Pods-SnowShoe-Swift_Example-dummy.m in Sources */,
+				88AF20AC23FCC12F0043E8BE /* SnowShoeRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,6 +795,7 @@
 			baseConfigurationReference = 280A1B69F1B4BDD92EBC0907EF6235C7 /* Pods-SnowShoe-Swift_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -810,6 +820,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1017,6 +1028,7 @@
 			baseConfigurationReference = CEAA3AC05DE4E5729915EB49E7D710C6 /* Pods-SnowShoe-Swift_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1040,6 +1052,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
